@@ -88,7 +88,37 @@ header{
     .container, nav {
         flex-direction: column;
     }
+    nav a:hover{
+        color: green;
+    }
     header{
         background-color: green;
     }
+}
+@media screen and (mas-width: 400px){
+    nav{
+        height: 100%;
+    }
+    nav li{
+        display: block;
+    }
+}
+
+/*CSS do form*/
+.row:after{
+    content:"";
+    display: table;
+    clear: both;
+}
+
+.label{
+    float:left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.input{
+    float: left;
+    width: 75%;
+    margin-top: 6px;
 }
